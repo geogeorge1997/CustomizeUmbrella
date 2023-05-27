@@ -1,0 +1,111 @@
+.preview-container {
+  width: 100%; 
+  height: 350px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.item {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-settings {
+  width: 50%;
+  color: black;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.preview-image {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.umbrella-image {
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.upload-image {
+  width: 10px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+.color-button {
+  border-radius: 50%; 
+  padding: 10px;
+}
+
+.upload-button-item-container {
+  display: flex;
+  justify-content:  space-around;
+  align-content: center;
+  align-items: center;
+  border-width: 0px;
+  height: 50px;
+  background: lightskyblue;
+}
+
+.upload-button-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button-item-container img {
+  width: 100%;
+}
+.upload-button-item-container input {
+  display: none;
+}
+
+.upload-button-item-container label {
+  display: block;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  text-transform: Uppercase;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nothing svg{
+  fill:azure !important;
+}
+
+nothing:hover svg{
+  fill: red !important;
+}
+
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
