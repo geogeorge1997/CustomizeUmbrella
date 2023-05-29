@@ -52,6 +52,8 @@ const changeImageColor = (color) => {
         document.getElementById('previewLoaderButtonId').style.display='none';
         // Displaying uplaod image in upload btn
         document.getElementById('uploadImageButtonId').style.display='block';
+        // Displaying Uplaoded Image
+        document.getElementById('uploadImageId').style.display='block';
         if (color === 'yellow') {
             // Changing Backgrounf color
             document.body.style.backgroundColor = "rgb(255, 254, 230)"; 
@@ -84,8 +86,10 @@ const changeImageColor = (color) => {
 
     // Hidding Umbrella Image
     document.getElementById('umbrellaImageId').style.display='none';
-    // Hidding Uplaod Image
+    // Hidding Uplaod Image Btn
     document.getElementById('uploadImageButtonId').style.display='none';
+    // Hidding Uplaoded Image
+    document.getElementById('uploadImageId').style.display='none';
     // Dislplaying loader image of upload btn
     document.getElementById('previewLoaderButtonId').style.display='block';
     // Dislplaying loader image
@@ -104,4 +108,6 @@ const removeUploadImage = () => {
     document.getElementById('removeButtonId').style.display = 'none';
     // Changing width of upload btn to 100%
     document.getElementById('uploadButtonDivId').style.width= '100%';
+    // Changing src of upload image id
+    document.getElementById('uploadImageId').src= '';
 }
